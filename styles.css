@@ -49,7 +49,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 img{
@@ -60,8 +62,8 @@ img{
 .container{
     display: flex;
     flex-direction: row;
-    margin: 22vh 0 1.5em 0;
-    width: min(41rem, 700px);
+    margin: 0 0 1.5em 0;
+    width: min(39rem, 700px);
     min-width: 21rem;
     background-color: var(--card_bg-color);
     border-radius: 0.6em;
@@ -81,8 +83,7 @@ img{
 
 .container__text{
     flex: 2;
-    padding: 2em 1.8em 1.75em 1.9em;
-    color: var(--text-color);
+    padding: 2em 1.8em 1.75em 2.1em;
     font-family: 'Montserrat';
 }
 
@@ -90,6 +91,7 @@ img{
     text-transform: uppercase;
     margin-bottom: 1.85em;
     letter-spacing: 0.3rem;
+    font-weight: 400;
     font-size: clamp(0.55rem, 1vw + 0.5rem, 0.75rem);
 }
 
@@ -99,16 +101,16 @@ img{
     margin-right: 0.3em;
     font-weight: 700;
     font-family: 'Fraunces';
-    font-size: clamp(1.975rem, 2vw + 0.5rem, 2.2rem);
+    font-size: clamp(1.975rem, 2vw + 0.5rem, 2.1rem);
     line-height: 1;
 }
 
 .text__description{
     margin-bottom: 1.95em;
-    margin-right: 1.5em;
+    margin-right: 0.3em;
     line-height: 1.65;
     font-weight: 500;
-    font-size: clamp(0.88rem, 1vw + 0.5rem, 0.95rem);
+    font-size: clamp(0.88rem, 1vw + 0.5rem, 0.9rem);
 }
 
 .container__text__price{
@@ -122,7 +124,7 @@ img{
 .actual__price{
     color: var(--PriceAndButton-color);
     font-weight: bold;
-    font-size: clamp(2.1rem, 2vw + 0.5rem, 2.2rem);
+    font-size: clamp(1.9rem, 2vw + 0.5rem, 2.05rem);
     margin-right: 0.5em;
 }
 
@@ -130,7 +132,7 @@ img{
     padding: 0.8rem 0;
     text-decoration: line-through;
     font-family: 'Montserrat';
-    font-size: clamp(0.8rem, 1vw + 0.5rem, 0.85rem);
+    font-size: clamp(0.75rem, 1vw + 0.5rem, 0.815rem);
 }
 
 .cart-icon{
@@ -146,8 +148,7 @@ img{
     justify-content: center;
     border-radius: 0.5em;
     font-weight: 700;
-    margin: 0 0.3rem;
-    margin-right: 0.6rem;
+    margin-right: 0.35rem;
     font-size: clamp(0.895rem, 1vw + 0.5rem, 0.92rem);
 }
 
@@ -164,7 +165,6 @@ img{
     .container{
         display: flex;
         flex-direction: column;
-        margin-top: 10vh;
     }
 
     .container__image{
