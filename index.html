@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="author" content="Daniel Mut Torres">
+  <meta name="description" content="NFT preview card">
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://danielmut02.github.io/nft-preview/" />
+  <link
+  rel="preload"
+  href="./fonts/montserrat-v31-latin-500.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="./fonts/montserrat-v31-latin-700.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="./fonts/fraunces-v38-latin-700.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Product preview card component</title>
+</head>
+<body>
+  <div class="container">
+        <div class="container__image">
+          <picture>
+            <source srcset="./images/image-product-desktop.jpg" media="(width >= 460px)">
+            <img class="image__parfum" src="./images/image-product-mobile.jpg" alt="Bottle of Channel Parfum" height="600" width="900">
+          </picture>
+        </div>
+    <div class="container__text">
+      <p class="product__info">Perfume</p>
+      <h1 class="text__title">Gabrielle Essence Eau De Parfum</h1>
+      <p class="text__description">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+        <div class="container__text__price">
+          <p class="actual__price">$149.99</p>
+          <p class="last__price">$169.99</p>
+      </div>
+      <a href="#" class="buy__btn">
+        <img class="cart-icon" alt="shopping cart" src="./images/icon-cart.svg">
+        Add to Cart
+      </a>
+    </div>
+  </div> 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/danielMut02" target="_blank"">Daniel Mut Torres</a>.
+  </div>
+</body>
+</html>
